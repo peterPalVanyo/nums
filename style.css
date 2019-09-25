@@ -25,10 +25,10 @@
     grid-column: 1 / span 2;
 }
 
-.item {
+/* .item {
     border: 1px black solid;
     display: inline-block;
-}
+} */
 button {
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -40,9 +40,11 @@ button {
 
 .btn {
     display: inline-block;
+    margin: 1.5rem 3rem;
     padding: 0.5rem 1rem;
-    background: #f4f4f4;
-    color: #333;
+    border: 0.5rem #f4f4f4 solid;
+    border-radius: 1rem;
+    color: #f4f4f4;
     text-decoration: none;
     font-size: 1.1rem;
     transition: all 0.3s ease-in;
@@ -60,19 +62,32 @@ ul {
     align-items: center;
     justify-content: center;}
     .container #box img {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         -webkit-filter: drop-shadow( 7px 7px 5px rgba(0, 0, 0, .75));
         filter: drop-shadow( 7px 7px 5px rgba(0, 0, 0, .75));}
+
+#icons {
+    margin-left: 2rem;
+    display: grid;
+    grid-template-rows: 75% 25%;}
+    #icons ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);}
+        #icons ul li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
 span.icon {
     background: url(/picture/icon01.svg);
     background-size: contain;
     cursor: pointer;
     display: inline-block;
-    height: 60px;
-    width: 60px;
-    margin: 5px;}
+    height: 70px;
+    width: 70px;
+    }
     span.icon#i2 {
         background: url(/picture/icon02.svg);}
         span.icon#i3 {
