@@ -9,8 +9,6 @@ btn.addEventListener('click', function() {
     const num = img.getAttribute('src').slice(13, 14)
     console.log(`${path.slice(0,13)}2.svg`)
     num === '1' ? img.setAttribute('src', `${path.slice(0,13)}2.svg`) : img.setAttribute('src', `${path.slice(0,13)}1.svg`)
-
-    /* img.getAttribute('src') === allImg[0] ? img.setAttribute('src', allImg[1]) : img.setAttribute('src', allImg[0]) */
 })
 
 icons.forEach(function(icon) {
