@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+p, h1, h2, h3 {
+    color: #f4f4f4;
+}
 
 .container {
     max-width: 1280px;
@@ -40,9 +43,8 @@ button {
 
 .btn {
     display: inline-block;
-    margin: 1.5rem 3rem;
-    padding: 0.5rem 1rem;
-    border: 0.5rem #f4f4f4 solid;
+    
+    border: 2px #f4f4f4 solid;
     border-radius: 1rem;
     color: #f4f4f4;
     text-decoration: none;
@@ -56,21 +58,32 @@ ul {
 }
 
 #box {
-    margin: auto;
+    margin: 1rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+    width: 350px;
+    height: 350px;}
     .container #box img {
-        width: 350px;
-        height: 350px;
+        max-width: 100%;
+        height: auto;
         -webkit-filter: drop-shadow( 7px 7px 5px rgba(0, 0, 0, .75));
         filter: drop-shadow( 7px 7px 5px rgba(0, 0, 0, .75));}
+        .container #box h2 {
+            margin-bottom: 1rem;
+        }
 
 #icons {
     margin-left: 2rem;
     display: grid;
-    grid-template-rows: 75% 25%;}
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 100%;}
+    #icons #btns {
+        grid-column: 1 / span 2;
+        display: grid;
+        grid-template-rows: 50% 50%
+    }
     #icons ul {
         display: grid;
         grid-template-columns: repeat(2, auto);}
@@ -98,6 +111,12 @@ span.icon {
                     background: url(/picture/icon05.svg);}
                     span.icon#i6 {
                         background: url(/picture/icon06.svg);}
+
+#text {
+    padding: 2rem;
+    text-align: center;
+    visibility: visible;
+}
 
 
 
