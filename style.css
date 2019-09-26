@@ -35,7 +35,8 @@ p, h1, h2, h3 {
     padding: 0.5rem;
     z-index: 1;}
     #navbar p {
-        color: rgb(216,211,204);}
+        color: rgb(216,211,204);
+        font-size: 1.5rem;}
         #navbar ul {
             display: flex;
             align-items: center;
@@ -43,6 +44,7 @@ p, h1, h2, h3 {
             #navbar ul li a {
                 text-decoration: none;
                 color: rgb(216,211,204);
+                font-size: 1.5rem;
                 padding: 0.5rem;
                 margin: 0 0.5rem;}
                 #navbar ul li a:hover {
@@ -58,7 +60,6 @@ p, h1, h2, h3 {
 
 .item {
     display: inline-block;
-    border: 1px solid black;
 }
 button {
     background-color: Transparent;
@@ -93,7 +94,6 @@ button {
     height: 100%;}
     .container #box h1 {
         font-size: 3rem;
-        border: 1px solid black;
     }
     .container #box #imgBack {
         background: url('./picture/chartBack.png') no-repeat center center/contain;
@@ -121,16 +121,14 @@ button {
     #icons #btns {
         grid-column: 1 / span 2;
         display: grid;
-        grid-template-rows: 50% 50%
-    }
+        grid-template-rows: 50% 50%}
     #icons ul {
         display: grid;
         grid-template-columns: repeat(2, auto);}
         #icons ul li {
             display: flex;
             align-items: center;
-            justify-content: center;
-        }
+            justify-content: center;}
 
 span.icon {
     background: url(/picture/icon01.svg);
@@ -155,7 +153,16 @@ span.icon {
     padding: 1rem 2rem;
     text-align: justify;
     font-size: 1.3rem;
-}
+    margin: 0 1rem;
+    background: rgb(216, 211, 204);
+    border-radius: 1rem;
+    opacity: 0.95;
+    border: 2px solid rgb(90, 76, 75);}
+    #text p, #text h2 {
+        color: rgb(90, 76, 75);}
+        #text p {
+            font-family: 'Source Sans Pro' !important;}
+            
 /* explanation */
 #explanation {
     background: pink;
