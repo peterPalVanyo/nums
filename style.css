@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
 }
 p, h1, h2, h3 {
     color: rgb(90, 76, 75);
@@ -57,6 +58,7 @@ p, h1, h2, h3 {
 
 .item {
     display: inline-block;
+    border: 1px solid black;
 }
 button {
     background-color: Transparent;
@@ -69,15 +71,17 @@ button {
 
 .btn {
     display: inline-block;
-    
     border: 2px rgb(90, 76, 75) solid;
     border-radius: 1rem;
     color: rgb(90, 76, 75);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    transition: all 0.3s ease-in;
-}
+    transition: all 0.3s ease-in;}
+    .btn:hover {
+        background: rgb(244, 142, 126);
+        border-color: rgb(238, 62, 69);
+    }
 
 
 #box {
@@ -87,6 +91,10 @@ button {
     justify-content: center;
     width: 100%;
     height: 100%;}
+    .container #box h1 {
+        font-size: 3rem;
+        border: 1px solid black;
+    }
     .container #box #imgBack {
         background: url('./picture/chartBack.png') no-repeat center center/contain;
         width: 100%;
@@ -144,8 +152,9 @@ span.icon {
                         background: url(/picture/icon06.svg);}
 
 #text {
-    padding: 2rem;
-    text-align: center;
+    padding: 1rem 2rem;
+    text-align: justify;
+    font-size: 1.3rem;
 }
 /* explanation */
 #explanation {
@@ -156,7 +165,7 @@ span.icon {
 
 .selected {
     border-style: solid;
-    border-color: white;
+    border-color: rgb(238, 62, 69);
     border-width: 2px;
     border-radius: 50%;
 }

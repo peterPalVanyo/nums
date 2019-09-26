@@ -5,9 +5,9 @@ const img = document.querySelector('#img')
 const icons = document.querySelectorAll('.icon')
 const allImg = ['./picture/0101.svg', './picture/0102.svg', './picture/0103.svg', './picture/0104.svg', './picture/0105.svg', './picture/0106.svg']
 const titles = ['KEDVENC', 'TIPP', 'VONZALOM', 'NEHÉZ', 'JÓ', 'IZGI']
-const title = document.querySelector('#box h2')
+const title = document.querySelector('#box h1')
 const text = document.querySelector('#text')
-const textTitle = document.querySelector('#text h1')
+const textTitle = document.querySelector('#text h2')
 const textContent = document.querySelector('#text p')
 const texts = ['A kerek számokat kevésbé szívleljük. A tíz prostituálja magát, mintha kerekítés vagy becslés lenne. A személyes kötődés szerinti számválasztást is befolyásolja a kerek számokkal szembeni averzió: ha valamelyik hónap 10. napján születsz, hatszor kevésbé választod a születésnapod számát kedvencednek, mintha más napon. A kedvencek választásánál 60% : 40% arányban a páratlan számok inkább preferáltak.',
  'Ha egy egyjegyű számra kell gondolni az emberek legtöbbször a hétre gondolnak. Ha az első 20 számból kell választani egyet, akkor a választás jellemzően a tizenhetesre esik: az emberek először kiszórják azokat a számokat amelyek nem spontánnak tűnnek: a párosokat, a három többszöröseit. A nulla, egy, és az öt is kiesik mivel a ciklus elején, közepén foglalnak helyet.',
@@ -32,11 +32,11 @@ icons.forEach(function(icon) {
             item.setAttribute('class', 'icon')
         })
         icon.setAttribute('class', 'icon selected')
-        console.log(icon.style.background)
         title.textContent = titles[num-1]
         textTitle.innerHTML = titles[num-1]
         textContent.innerHTML = texts[num-1]
         text.style.visibility = 'hidden'
+        console.log(text)
     })
 })
 
