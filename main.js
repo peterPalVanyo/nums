@@ -28,10 +28,15 @@ icons.forEach(function(icon) {
         const num = icon.getAttribute('id').slice(1)
         const path = `./picture/0${num}01.svg`
         img.setAttribute('src', path)
-
+        icons.forEach(function(item) {
+            item.setAttribute('class', 'icon')
+        })
+        icon.setAttribute('class', 'icon selected')
+        console.log(icon.style.background)
         title.textContent = titles[num-1]
         textTitle.innerHTML = titles[num-1]
         textContent.innerHTML = texts[num-1]
+        text.style.visibility = 'hidden'
     })
 })
 
