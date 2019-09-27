@@ -18,10 +18,9 @@ p, h1, h2, h3 {
 .wrapper {
     display: flex;
     flex-direction: column;
-    align-items: space-between;
-    justify-content: center;
+    justify-content: space-between;
     height: 100vh;
-    background: url('./picture/gridBack.png') no-repeat center center/cover;
+    background: url('./picture/gridBack.png') no-repeat center bottom/cover;
 }
 
 /* navbar */
@@ -53,6 +52,7 @@ p, h1, h2, h3 {
                     border-radius: 5px;}
 #grid {
     display: grid;
+    grid-gap: 1rem;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 30vw 10vw;}
     #grid div:last-child {
@@ -60,6 +60,7 @@ p, h1, h2, h3 {
 
 .item {
     display: inline-block;
+    /* border: 1px solid black; */
 }
 button {
     background-color: Transparent;
@@ -150,7 +151,7 @@ span.icon {
                         background: url(/picture/icon06.svg);}
 
 #text {
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     text-align: justify;
     font-size: 1.3rem;
     margin: 0 1rem;
@@ -161,8 +162,9 @@ span.icon {
     #text p, #text h2 {
         color: rgb(90, 76, 75);}
         #text p {
+            line-height: 1.2rem;
             font-family: 'Source Sans Pro' !important;}
-            
+
 /* explanation */
 #explanation {
     background: pink;
